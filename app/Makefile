@@ -1,5 +1,10 @@
+run: remove-build build-project run-dist
+
 run-dist:
 	./build/install/app/bin/app
 
-say:
-	echo "Hello, hi"
+build-project:
+	gradle installDist
+
+remove-build:
+	gradle clean
