@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Engine {
     public static void runGame(Games game, Scanner scanner) {
         boolean isAnswerRight = false;
-        int round = 0;
+        int round = 1;
 
         String userName = Cli.greeting(scanner);
         System.out.println(game.getInitialQuestion());
