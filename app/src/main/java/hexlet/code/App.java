@@ -1,6 +1,7 @@
 package hexlet.code;
 
 import hexlet.code.games.CalcGame;
+import hexlet.code.games.EvenGame;
 
 import java.util.Scanner;
 
@@ -15,7 +16,7 @@ public class App {
         switch (answer) {
             case "1" :  Cli.greeting(scanner);
                         break;
-            case "2" :  Game.evenGame(scanner);
+            case "2" :  Engine.runGame(new EvenGame(), scanner);
                         break;
             case "3" :  Engine.runGame(new CalcGame(), scanner);
                         break;
