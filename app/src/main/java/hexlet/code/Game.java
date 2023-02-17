@@ -1,5 +1,7 @@
 package hexlet.code;
 
+import hexlet.code.games.Utils;
+
 import java.util.Scanner;
 
 public class Game {
@@ -9,7 +11,7 @@ public class Game {
         byte round = 1;
         boolean isAnswerRight = false;
         do {
-            int number = getRandomInteger();
+            int number = Utils.getRandomInteger(1, 100);
 
             System.out.println("Question: " + number);
             System.out.print("Your answer: ");
@@ -21,15 +23,10 @@ public class Game {
                 System.out.println("Correct!");
                 round += 1;
             } else {
-                System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + rightAnswer + "'");
-                System.out.println("Let's try again, " + userName + "!");
+                Engine.sayYouLose(userName, answer, rightAnswer);
                 return;
             }
-        } while (isAnswerRight & round <= 3);
+        } while (isAnswerRight & round <= Engine.ROUNDS);
         System.out.println("Congratulations, " + userName + "!");
-    }
-
-    private static int getRandomInteger() {
-        return (int)(Math.random() * 100);
     }
 }
