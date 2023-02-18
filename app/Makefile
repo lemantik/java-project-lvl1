@@ -8,3 +8,6 @@ build-project:
 
 remove-build:
 	./gradlew clean
+
+check:
+	./gradlew checkstyleMain

@@ -1,6 +1,6 @@
 package hexlet.code.games;
 
-public class CalcGame implements Games{
+public class CalcGame implements Games {
     @Override
     public String getInitialQuestion() {
         return "What is the result of the expression?";
@@ -24,6 +24,7 @@ public class CalcGame implements Games{
                         break;
             case '*' :  answer = firstElement * secondElement;
                         break;
+            default :   break;
         }
 
         return new String[]{question, Integer.toString(answer)};

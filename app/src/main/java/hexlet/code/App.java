@@ -26,8 +26,7 @@ public class App {
                         break;
             case "5" :  Engine.runGame(new ProgressionGame(), scanner);
                         break;
-            case "0" :  System.out.println("Exit");
-                        break;
+            default :   System.out.println("Exit");
         }
         scanner.close();
     }

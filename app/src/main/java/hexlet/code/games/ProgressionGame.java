@@ -2,7 +2,7 @@ package hexlet.code.games;
 
 import java.util.StringJoiner;
 
-public class ProgressionGame implements Games{
+public class ProgressionGame implements Games {
     @Override
     public String getInitialQuestion() {
         return "What number is missing in the progression?";

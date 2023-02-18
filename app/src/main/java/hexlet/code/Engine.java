@@ -12,7 +12,7 @@ public class Engine {
         String userName = Cli.greeting(scanner);
         System.out.println(game.getInitialQuestion());
         do {
-            String [] questionAnswer= game.getQuestionAnswer();
+            String[] questionAnswer = game.getQuestionAnswer();
             System.out.println("Question: " + questionAnswer[0]);
             System.out.print("Your answer: ");
             String answer = scanner.next();
@@ -28,7 +28,7 @@ public class Engine {
         } while (isAnswerRight & round <= ROUNDS);
         System.out.println("Congratulations, " + userName + "!");
     }
-    public static byte ROUNDS = 3;
+    public static final byte ROUNDS = 3;
     public static void sayYouLose(String userName, String usersAnswer, String rightAnswer) {
         System.out.println("'" + usersAnswer + "' is wrong answer ;(. Correct answer was '" + rightAnswer + "'");
         System.out.println("Let's try again, " + userName + "!");
