@@ -7,3 +7,5 @@
 [![asciicast](https://asciinema.org/a/fmevOu3vNuFZr0QAObx9YrOBn.svg)](https://asciinema.org/a/fmevOu3vNuFZr0QAObx9YrOBn)
 ### Execution of the third game - GCD
 [![asciicast](https://asciinema.org/a/Hw2bUxJ5OQjaVzSAahARaQVJU.svg)](https://asciinema.org/a/Hw2bUxJ5OQjaVzSAahARaQVJU)
+### Execution of the fourth game - Progression
+[![asciicast](https://asciinema.org/a/Dl42mcTJPTeubOzKsaNlvnZsB.svg)](https://asciinema.org/a/Dl42mcTJPTeubOzKsaNlvnZsB)
