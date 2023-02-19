@@ -10,6 +10,8 @@ public class Utils {
     }
 
     public static int getRandomInteger() {
-        return (int) (Math.random() * (100 - 1)) + 1;
+        int defaultMaxNumber = 100;
+
+        return (int) (Math.random() * (defaultMaxNumber - 1)) + 1;
     }
 }

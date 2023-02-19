@@ -9,6 +9,7 @@ public class PrimeGame implements Games {
     @Override
     public final String[] getQuestionAnswer() {
         int maxPrimeNumber = 1000;
+
         int question = Utils.getRandomInteger(maxPrimeNumber);
 
         String answer = isPrime(question) ? "yes" : "no";
