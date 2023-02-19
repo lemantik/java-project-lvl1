@@ -8,8 +8,8 @@ public class CalcGame implements Games {
 
     @Override
     public String[] getQuestionAnswer() {
-        int firstElement = Utils.getRandomInteger(1, 100);
-        int secondElement = Utils.getRandomInteger(1, 100);
+        int firstElement = Utils.getRandomInteger();
+        int secondElement = Utils.getRandomInteger();
         int operandIndex = Utils.getRandomInteger(0, 2);
         char[] operands = {'+', '-', '*'};
 

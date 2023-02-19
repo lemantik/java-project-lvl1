@@ -11,9 +11,9 @@ public class ProgressionGame implements Games {
     @Override
     public String[] getQuestionAnswer() {
         int countNumberInRow = Utils.getRandomInteger(5, 10);
-        int hiddenPosition = Utils.getRandomInteger(1, countNumberInRow);
-        int startNumber = Utils.getRandomInteger(1, 20);
-        int commonDifference = Utils.getRandomInteger(1, 20);
+        int hiddenPosition = Utils.getRandomInteger(countNumberInRow);
+        int startNumber = Utils.getRandomInteger(20);
+        int commonDifference = Utils.getRandomInteger(20);
 
         var question = new StringJoiner(" ");
         int currNumber = startNumber;

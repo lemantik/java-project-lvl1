@@ -8,7 +8,7 @@ public class EvenGame implements Games {
 
     @Override
     public String[] getQuestionAnswer() {
-        int question = Utils.getRandomInteger(1, 100);
+        int question = Utils.getRandomInteger();
         String rightAnswer = question % 2 == 0 ? "yes" : "no";
         return new String[]{Integer.toString(question), rightAnswer};
     }

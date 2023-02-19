@@ -9,8 +9,8 @@ public class GcdGame implements Games {
 
     @Override
     public String[] getQuestionAnswer() {
-        int number1 = Utils.getRandomInteger(1, 100);
-        int number2 = Utils.getRandomInteger(1, 100);
+        int number1 = Utils.getRandomInteger();
+        int number2 = Utils.getRandomInteger();
         int answer = getGCD(number1, number2);
 
         return new String[]{number1 + " " + number2, Integer.toString(answer)};
