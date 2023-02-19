@@ -1,6 +1,7 @@
 package hexlet.code.games;
 
 public class Utils {
+    private static final int DEFAULT_MAX_NUMBER = 100;
     public static int getRandomInteger(int min, int max) {
         return (int) (Math.random() * (max - min)) + min;
     }
@@ -10,8 +11,6 @@ public class Utils {
     }
 
     public static int getRandomInteger() {
-        int defaultMaxNumber = 100;
-
-        return (int) (Math.random() * (defaultMaxNumber - 1)) + 1;
+        return (int) (Math.random() * (DEFAULT_MAX_NUMBER - 1)) + 1;
     }
 }
