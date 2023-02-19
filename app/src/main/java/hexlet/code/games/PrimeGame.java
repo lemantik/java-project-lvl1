@@ -2,13 +2,14 @@ package hexlet.code.games;
 
 public class PrimeGame implements Games {
     @Override
-    public String getInitialQuestion() {
+    public final String getInitialQuestion() {
         return "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
     }
 
     @Override
-    public String[] getQuestionAnswer() {
-        int question = Utils.getRandomInteger(1000);
+    public final String[] getQuestionAnswer() {
+        int maxPrimeNumber = 1000;
+        int question = Utils.getRandomInteger(maxPrimeNumber);
 
         String answer = isPrime(question) ? "yes" : "no";
         return new String[] {Integer.toString(question), answer};

@@ -1,13 +1,11 @@
 package hexlet.code.games;
 
 public class CalcGame implements Games {
-    @Override
-    public String getInitialQuestion() {
+    public final String getInitialQuestion() {
         return "What is the result of the expression?";
     }
 
-    @Override
-    public String[] getQuestionAnswer() {
+    public final String[] getQuestionAnswer() {
         int firstElement = Utils.getRandomInteger();
         int secondElement = Utils.getRandomInteger();
         int operandIndex = Utils.getRandomInteger(0, 2);
