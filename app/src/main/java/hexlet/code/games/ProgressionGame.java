@@ -4,16 +4,21 @@ import java.util.StringJoiner;
 
 public class ProgressionGame implements Games {
     @Override
-    public String getInitialQuestion() {
+    public final String getInitialQuestion() {
         return "What number is missing in the progression?";
     }
 
     @Override
-    public String[] getQuestionAnswer() {
-        int countNumberInRow = Utils.getRandomInteger(5, 10);
+    public final String[] getQuestionAnswer() {
+        int minAmountOfElementsInSequence = 5;
+        int maxAmountOfElementsInSequence = 10;
+        int maxNumberForStartSequence = 20;
+        int maxDifferenceInSequence = 20;
+
+        int countNumberInRow = Utils.getRandomInteger(minAmountOfElementsInSequence, maxAmountOfElementsInSequence);
         int hiddenPosition = Utils.getRandomInteger(countNumberInRow);
-        int startNumber = Utils.getRandomInteger(20);
-        int commonDifference = Utils.getRandomInteger(20);
+        int startNumber = Utils.getRandomInteger(maxNumberForStartSequence);
+        int commonDifference = Utils.getRandomInteger(maxDifferenceInSequence);
 
         var question = new StringJoiner(" ");
         int currNumber = startNumber;
